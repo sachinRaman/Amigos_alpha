@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background2"
+    tools:context="com.amigos.sindhusha.activity.SettingsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background1"
+                android:paddingBottom="20dp"
+                android:paddingTop="20dp">
+
+                <ImageView
+                    android:id="@+id/iv_profile_pic"
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_user" />
+
+                <ImageView
+                    android:id="@+id/profilePhotoEdit"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignBottom="@+id/iv_profile_pic"
+                    android:layout_alignRight="@+id/iv_profile_pic"
+                    android:onClick="showFileChooser"
+                    android:src="@drawable/profile_picture_edit" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Display Name"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/et_display_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background1"
+                android:ems="10"
+                android:hint="Write your name..."
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/textColor4"
+                android:textColorLink="@color/textColor5"
+                android:textCursorDrawable = "@null"/>
+
+            <TextView
+                android:id="@+id/textView_aboutme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Age"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/age"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background1"
+                android:ems="10"
+                android:hint="Write your age..."
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/textColor4"
+                android:textColorLink="@color/textColor5"
+                android:textCursorDrawable = "@null"/>
+
+            <TextView
+                android:id="@+id/tv1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Sex"
+                android:textSize="15sp" />
+
+            <!--<EditText-->
+                <!--android:id="@+id/sex"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:background="@color/background1"-->
+                <!--android:ems="10"-->
+                <!--android:inputType="textPersonName"-->
+                <!--android:padding="10dp"-->
+                <!--android:textColor="@color/textColor4"-->
+                <!--android:textColorLink="@color/textColor5" />-->
+
+            <RadioGroup
+                android:id="@+id/radioSex"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background1"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/radioMale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:buttonTint="@color/mainColor"
+                    android:checked="true"
+                    android:text="Male" />
+
+                <RadioButton
+                    android:id="@+id/radioFemale"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:buttonTint="@color/mainColor"
+                    android:text="Female" />
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/tv2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Place"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background1"
+                android:ems="10"
+                android:hint="Write your current city..."
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:textColor="@color/textColor4"
+                android:textColorLink="@color/textColor5"
+                android:textCursorDrawable = "@null"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Status"
+                android:textSize="15sp"/>
+
+            <EditText
+                android:id="@+id/editText_info"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background1"
+                android:ems="10"
+                android:hint="Say something witty..."
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/textColor4"
+                android:textCursorDrawable = "@null"/>
+
+            <TextView
+                android:id="@+id/tv4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingTop="10dp"
+                android:text="Bio"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/editText_bio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background1"
+                android:ems="10"
+                android:hint="Describe yourself in a peculiar way."
+                android:inputType="textMultiLine"
+                android:padding="10dp"
+                android:textColor="@color/textColor4"
+                android:textCursorDrawable = "@null"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="60dp"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <Button
+                android:id="@+id/button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/textboxborder"
+                android:backgroundTint="@color/actionBarColor"
+                android:minHeight="0dp"
+                android:minWidth="10dp"
+                android:onClick="updateNickName"
+                android:paddingBottom="10dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:paddingTop="10dp"
+                android:text="OK"
+                android:textColor="@color/actionBarTextColor"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/chatActionBar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:orientation="horizontal"
+    android:weightSum="1">
+
+
+    <ImageView
+        android:id="@+id/actionBarPhotoIcon"
+        android:layout_width="0dp"
+        android:layout_height="40dp"
+        android:layout_weight=".12"
+        android:background="@color/actionBarColor"
+        android:src="@drawable/ic_user" />
+
+    <TextView
+        android:id="@+id/actionBarUserName"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight=".78"
+        android:background="@color/actionBarColor"
+        android:gravity="center_vertical"
+        android:paddingLeft="16dp"
+        android:text="UserName"
+        android:textColor="@color/actionBarTextColor"
+        android:textSize="20sp"
+        tools:ignore="RtlHardcoded,RtlSymmetry" />
+
+    <ImageView
+        android:id="@+id/options_menu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".10"
+        android:background="@color/actionBarColor"
+        android:src="@drawable/overflowicon" />
+</LinearLayout>

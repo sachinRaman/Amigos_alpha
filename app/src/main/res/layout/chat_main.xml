@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/backgroundColor"
+    android:orientation="vertical"
+    android:padding="10dp"
+    tools:context="com.amigos.sindhusha.activity.MainActivity">
+
+    <ListView
+        android:id="@+id/msgview"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:divider="@null"
+        android:stackFromBottom="true"
+        android:transcriptMode="alwaysScroll"></ListView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textCursorDrawable = "@null"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:layout_marginRight="9dp"
+            android:layout_weight=".86"
+            android:background="@drawable/textboxborder"
+            android:hint="Type a message..."
+            android:inputType="textCapSentences|textMultiLine"
+            android:textColor="@color/textColor5" />
+
+
+        <ImageView
+            android:id="@+id/send"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_weight=".14"
+            android:src="@drawable/send_icon" />
+
+        <!--<Button-->
+        <!--android:id="@+id/send"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:layout_gravity="bottom"-->
+        <!--android:background="@drawable/chatbubbleright"-->
+        <!--android:text="Send"-->
+        <!--android:textColor="@color/textColor5" />-->
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="mainColor">#F4514E</color>
+    <!--<color name="complementaryColor">#303F9F</color>-->
+    <color name="complementaryColor">#b8100c</color>
+    <color name="subMainColor">#f3f3f3</color>
+    <color name="backgroundColor">#ffffff</color>
+
+
+    <color name="actionBarColor">#f4514e</color>
+    <color name="actionBarTopColor">#303F9F</color>
+
+    <color name="actionBarTextColor">#ffffff</color>
+
+    <color name="background1">#ffffff</color>
+    <color name="background2">#f5f5f5</color>
+    <color name="background3">#bdbdbd</color>
+    <color name="background4">#757575</color>
+
+    <color name="textColor1">#ffffff</color>
+    <color name="textColor2">#EEEEEE</color>
+    <color name="textColor3">#9E9E9E</color>
+    <color name="textColor4">#757575</color>
+    <color name="textColor5">#000000</color>
+
+    <color name="button1">#ffffff</color>
+    <color name="button2">#eeeeee</color>
+    <color name="button3">#bdbdbd</color>
+    <color name="button4">#757575</color>
+    <color name="button5">#000000</color>
+
+    <color name="line1">#ffffff</color>
+    <color name="line2">#EEEEEE</color>
+    <color name="line3">#bdbdbd</color>
+    <color name="line4">#757575</color>
+    <color name="line5">#000000</color>
+
+    <color name="chatBubbleLeft">@color/mainColor</color>
+    <color name="chatBubbleRight">#E0E0E0</color>
+
+
+</resources>

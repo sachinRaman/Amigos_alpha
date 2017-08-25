@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+ Copyright 2013 The Android Open Source Project
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+     http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+-->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.amigos.sindhusha"
+    android:versionCode="4"
+    android:versionName="4.0">
+
+    <!-- Min/target SDK versions (<uses-sdk>) managed by build.gradle -->
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".OfflineCapabilities.Amigos"
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher"
+        android:label="Amigos"
+        android:largeHeap="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:label">
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="Amigos"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.TopicPrefActivity"
+            android:label="My Interests"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait" />
+
+        <meta-data
+            android:name="android.support.PARENT_ACTIVITY"
+            android:value="com.amigos.sindhusha.activity.MainActivity" />
+        <meta-data
+            android:name="com.amigos.sindhusha.util.GlideConfiguration"
+            android:value="GlideModule" />
+
+        <activity
+            android:name=".activity.ChatActivity"
+            android:label="Chat "
+            android:noHistory="true"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".activity.SettingsActivity"
+            android:label="My Profile"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amigos.sindhusha.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.ProfileUserInfoActivity"
+            android:label=""
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amigos.sindhusha.activity.MainActivity" />
+        </activity>
+
+        <service android:name=".service.ChatService" />
+
+        <activity
+            android:name=".activity.ArchiveChatActivity"
+            android:label="On Hold Users"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amigos.sindhusha.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.BlockListActivity"
+            android:label="@string/title_activity_block_list"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/Theme.AppCompat">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.amigos.sindhusha.activity.MainActivity" />
+        </activity>
+        <activity
+            android:name=".activity.TopicTagsActivity"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".activity.PreferenceTags"
+            android:label="Choose your interests"
+            android:noHistory="true"
+            android:parentActivityName=".activity.MainActivity"
+            android:screenOrientation="portrait">
+        </activity>
+    </application>
+
+</manifest>

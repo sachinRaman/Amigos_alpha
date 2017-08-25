@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "871978115097",
+    "firebase_url": "https://amigos-d1502.firebaseio.com",
+    "project_id": "amigos-d1502",
+    "storage_bucket": "amigos-d1502.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:871978115097:android:cbb2efd68f8d37d7",
+        "android_client_info": {
+          "package_name": "com.amigos.sindhusha"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "871978115097-f9jn5viabht7dhlsir46o8b2kil7bd2n.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.sindhusha",
+            "certificate_hash": "1a4bab7b700beb16bd41cca2da4dd726bfad4bdf"
+          }
+        },
+        {
+          "client_id": "871978115097-gkgbcukspu29dpp69acprjv4htctjjrg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAs3npuyCd8AcU0RALkBoY5XsPjBufnL7U"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "871978115097-gkgbcukspu29dpp69acprjv4htctjjrg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

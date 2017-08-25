@@ -1,0 +1,8 @@
+<resources>
+    <string name="title_activity_topic_pref">TopicPrefActivity</string>
+    <string name="title_activity_archive_chat">ArchiveChatActivity</string>
+    <string name="title_activity_block_list">BlockListActivity</string>
+    <string name="title_activity_random">RandomActivity</string>
+
+
+</resources>

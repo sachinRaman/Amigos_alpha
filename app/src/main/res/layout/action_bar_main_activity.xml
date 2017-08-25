@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:weightSum="1"
+    android:background="@color/actionBarColor">
+
+    <TextView
+        android:id="@+id/main_activity_title"
+        android:layout_weight=".9"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical|center_horizontal"
+        android:text="Amigos"
+        android:textColor="@color/line1"
+        android:textSize="24sp"
+        android:layout_width="wrap_content" />
+
+    <ImageView
+        android:id="@+id/main_activiyty_overflow"
+        android:layout_width="40dp"
+        android:layout_height="wrap_content"
+        android:layout_weight=".1"
+        android:src="@drawable/overflow_icon" />
+
+
+
+</LinearLayout>

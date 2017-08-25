@@ -1,0 +1,54 @@
+<!--
+  Copyright 2013 The Android Open Source Project
+
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License.
+  -->
+
+<resources>
+
+    <!-- Activity themes -->
+
+    <style name="Theme.Base" parent="android:Theme.Light" />
+
+    <style name="Theme.Sample" parent="Theme.Base" />
+
+
+    <style name="AppTheme" parent="Theme.Sample" >
+        <item name="android:colorPrimary">#F4514E</item>
+        <item name="android:colorPrimaryDark">@color/complementaryColor</item>
+        <item name="android:colorAccent">@color/subMainColor</item>
+        <item name="android:textColorPrimary">@color/actionBarTextColor</item>
+        <item name="android:windowBackground">@color/backgroundColor</item>
+        <item name="android:itemTextAppearance">@style/TextAppearance</item>
+        <item name="android:textColor">@color/textColor5</item>
+        <item name="android:actionBarSize">45dp</item>
+        <item name="actionBarSize">45dp</item>
+        <item name="android:typeface">serif</item>
+
+
+    </style>
+
+
+    <style name="TextAppearance">
+        <item name="android:textColor">@color/textColor5</item><!-- For menu text color -->
+    </style>
+
+
+
+    <!-- Widget styling -->
+    <style name="Widget" />
+
+    <style name="Theme.Sample.ActionBar"></style>
+
+
+</resources>
